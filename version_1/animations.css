@@ -1,0 +1,156 @@
+body:has(.hidden-checkbox:checked) .app-header {
+  background: #fff;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+body:has(.hidden-checkbox:checked) .app-header__top-section {
+  background: #fff;
+}
+
+body:has(.hidden-checkbox:checked) .desktop-nav {
+  background: #fff;
+}
+
+body:has(.three-line-checkbox:checked) .desktop-nav {
+  transform: translate(0);
+  transition: transform 0.3s ease;
+}
+
+.desktop-nav {
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+.dropout-menu {
+  transform: translateY(-250%);
+  transition: transform 0.3s ease;
+}
+
+.products-menu:has(.big-menu-iaas-radio:checked) .base-menu-content-iaas {
+  display: block;
+}
+
+.products-menu:has(.big-menu-saas-radio:checked) .base-menu-content-saas {
+  display: block;
+}
+
+.products-menu:has(.big-menu-dbaas-radio:checked) .base-menu-content-dbaas {
+  display: block;
+}
+
+.products-menu:has(.big-menu-secaas-radio:checked) .base-menu-content-secaas {
+  display: block;
+}
+
+.products-menu:has(.big-menu-naas-radio:checked) .base-menu-content-naas {
+  display: block;
+}
+
+.products-menu:has(.big-menu-ai-radio:checked) .base-menu-content-ai {
+  display: block;
+}
+
+.profserv-menu:has(.big-menu-custom-radio:checked) .base-menu-content-custom {
+  display: block;
+}
+
+.profserv-menu:has(.big-menu-consulting-radio:checked)
+  .base-menu-content-consulting {
+  display: block;
+}
+
+.profserv-menu:has(.big-menu-outsourcing-radio:checked)
+  .base-menu-content-outsourcing {
+  display: block;
+}
+
+.mws-button:hover {
+  transform: scale(102%);
+}
+
+.mws-button:active {
+  transform: scale(98%);
+}
+
+.three-line-checkbox:checked + .three-line-btn-content .line:first-child {
+  transform: translateY(6px) rotate(45deg) scaleX(1.2);
+  transition: transform 0.3s ease;
+}
+
+.three-line-checkbox:checked + .three-line-btn-content .line:nth-child(2) {
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.three-line-checkbox:checked + .three-line-btn-content .line:last-child {
+  transform: translateY(-6px) rotate(-45deg) scaleX(1.2);
+  transition: transform 0.3s ease;
+}
+
+.desktop-nav__list-header:has(.hidden-checkbox:checked)
+  + .desktop-nav__list-content,
+.desktop-nav__list-header:has(.hidden-checkbox:checked)
+  + .no-tree-accordion-content {
+  max-height: 5000px;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.desktop-nav__list-header:has(.hidden-checkbox:checked)
+  .desktop-nav__menu-button {
+  color: #ff0032;
+  transition: color 0.3s ease;
+}
+.desktop-nav__list-header:has(.hidden-checkbox:checked) svg {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease;
+}
+
+.tree-accordion-header:has(.checkbox-tree-accordion:checked)
+  + .tree-accordion-content {
+  max-height: 5000px;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.tree-accordion-header:has(.checkbox-tree-accordion:checked) .vertical-line {
+  transform: rotate(0);
+}
+
+@media (min-width: 1280px) {
+  .desktop-nav__list-item:hover {
+    color: #ff0032;
+  }
+
+  .big-menu-radio:checked + .big-menu-label {
+    background-color: #1d2023;
+    color: #fafafa;
+  }
+
+  .menu-wrapper:has(.products-dropout:checked) .products-menu {
+    transform: translateY(12px);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .menu-wrapper:has(.profserv-dropout:checked) .profserv-menu {
+    transform: translateY(12px);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .menu-wrapper:has(.events-dropout:checked) .events-menu {
+    transform: translateY(12px);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .menu-wrapper:has(.support-dropout:checked) .support-menu {
+    transform: translateY(12px);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .desktop-nav {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 760px) {
+  .desktop-nav {
+    transform: translateX(0%) translateY(-100%);
+  }
+}
