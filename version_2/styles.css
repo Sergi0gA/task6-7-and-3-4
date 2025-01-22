@@ -189,7 +189,7 @@ a {
   width: 100%;
 }
 
-.hidden-checkbox {
+.hidden-button {
   display: none;
 }
 
@@ -234,7 +234,7 @@ a {
   padding-bottom: 0px;
 }
 
-.checkbox-tree-accordion {
+.tree-open-button {
   display: none;
 }
 
